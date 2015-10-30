@@ -1,14 +1,14 @@
 #Chrome Extension for kdb/q REPL
 
 Interacts with kdb/q from chrome using kdb http interface. Useful for quick kdb query  
-![alt text](https://github.com/komsit37/chrome-devtools-q/images/screenshot2.png "Screenshot")
+![alt text](https://raw.github.com/komsit37/chrome-devtools-q/master/images/screenshot2.png "Screenshot")
 
 ##Installation
 
 1. Clone this repo  
 2. Open Chrome extensions page chrome://extensions  
 3. Load unpacked extension using Developer mode from src folder. You should see something similar to the image below  
-![alt text](https://github.com/komsit37/chrome-devtools-q/images/screenshot1.png "Chrome Extension")
+![alt text](https://raw.github.com/komsit37/chrome-devtools-q/master/images/screenshot1.png "Chrome Extension")
 
 
 ##Usage
