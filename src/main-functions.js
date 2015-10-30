@@ -38,7 +38,7 @@ function loadState(cb) {
 
 //execute functions
 function wrap(str) {
-    str = "window.location.search='" + encodeURI(str) + "'";
+    str = "window.location.search='{" + encodeURI(str) + "}[]'";
     return str;
 }
 function exec(str) {
