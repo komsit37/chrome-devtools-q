@@ -1,0 +1,13 @@
+{
+	"name": "kdb/q REPL",
+	"version": "0.0.1",
+	"description": "send q command to remote kdb within the Web Inspector.",
+	"devtools_page": "devtools_page/index.html",
+    "icons": { "128": "resources/icon128.png" },
+	"minimum_chrome_version" : "18",
+	"permissions": [
+		"tabs",
+		"contextMenus" 
+	],
+	"manifest_version": 2
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /*right: 50%; for half*/
+        #q-editor {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            background-color:black;
+            font-size: 10pt;
+        }
+        #output {
+            position: fixed;
+            right: 10px;
+            top: 0;
+            padding: 5px 10px;
+            z-index: 3;
+            background-color:green;
+            color:white;
+            display: none;
+            font-size: 30pt;
+        }
+
+        @keyframes blinker {
+            0% { opacity: 0.0; }
+        }
+        #output.active {
+            display: block;
+            animation: blinker 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="q-editor"></div>
+    <div id="output"></div>
+
+    <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ace/mode-q.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ace/theme-monokai.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="main-functions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
