@@ -15,9 +15,20 @@
     top: 0;
     padding: 5px 10px;
     z-index: 3;
-    background-color:green;
     color:white;
     display: none;
+}
+#message.load {
+    background-color: #ffdf3c;
+}
+#message.delete {
+    background-color: red;
+    text-decoration: line-through;
+}
+#message.save{
+    background-color:green;
+}
+#message p{
     font-size: 30pt;
 }
 
@@ -41,9 +52,10 @@
     font-weight: bold;
     color: white;
 }
-#config input{
+#config input, select{
     background-color: black;
     color: orangered;
     border: 0;
     border-bottom: solid 1px white;
+    border-radius: 0;
 }

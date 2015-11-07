@@ -44,3 +44,9 @@ editor.commands.addCommand({
     bindKey: "Ctrl-l|Command-l",
     exec: loadState
 });
+
+editor.commands.addCommand({
+    name: "deleteState",
+    bindKey: "Ctrl-d|Command-d",
+    exec: deleteState
+});
