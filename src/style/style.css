@@ -1,0 +1,49 @@
+/*right: 50%; for half*/
+#q-editor {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color:black;
+    font-size: 10pt;
+}
+#message {
+    position: fixed;
+    right: 10px;
+    top: 0;
+    padding: 5px 10px;
+    z-index: 3;
+    background-color:green;
+    color:white;
+    display: none;
+    font-size: 30pt;
+}
+
+@keyframes blinker {
+    0% { opacity: 0.0; }
+}
+#message.active {
+    display: block;
+    animation: blinker 1s linear;
+}
+#config {
+    float: right;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    padding: 5px 10px;
+    z-index: 3;
+}
+
+#config label{
+    font-weight: bold;
+    color: white;
+}
+#config input{
+    background-color: black;
+    color: orangered;
+    border: 0;
+    border-bottom: solid 1px white;
+}

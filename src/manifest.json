@@ -1,6 +1,6 @@
 {
 	"name": "kdb/q REPL",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "send q command to remote kdb within the Web Inspector.",
 	"devtools_page": "devtools_page/index.html",
     "icons": { "128": "resources/icon128.png" },

@@ -2,49 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-        /*right: 50%; for half*/
-        #q-editor {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            z-index: 1;
-            background-color:black;
-            font-size: 10pt;
-        }
-        #output {
-            position: fixed;
-            right: 10px;
-            top: 0;
-            padding: 5px 10px;
-            z-index: 3;
-            background-color:green;
-            color:white;
-            display: none;
-            font-size: 30pt;
-        }
-
-        @keyframes blinker {
-            0% { opacity: 0.0; }
-        }
-        #output.active {
-            display: block;
-            animation: blinker 1s linear;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
     <div id="q-editor"></div>
-    <div id="output"></div>
+    <div id="message"></div>
+    <div id="config">
+        <label for="script_name">Name</label>
+        <input type="text" id="script_name" name="script_name" value="" size="10">
+        <label for="q_template">Template</label>
+        <input type="text" id="q_template" name="q_template" value="" size="10">
+    </div>
 
     <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="ace/mode-q.js" type="text/javascript" charset="utf-8"></script>
     <script src="ace/theme-monokai.js" type="text/javascript" charset="utf-8"></script>
 
-    <script src="main-functions.js" type="text/javascript" charset="utf-8"></script>
-    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/utils.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="main-q.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main-ui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main-ace.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>

@@ -22,7 +22,8 @@ Interacts with kdb/q from chrome using kdb http interface. Useful for quick kdb 
    * `Command+Enter` to run the current line    
    * `Command+e` to run the current selection  
    * `Command+Shift+Enter` to run the whole script    
-   * `Command+s` to save script to chrome local key-value storage (keyed by port no. - since I tend to use specific port no. for specific data)  
+   * `Command+s` to save script to chrome local key-value storage   
+   * `Command+l` to load script from chrome local key-value storage  
    
    (Replace `Command` by `Ctrl` for above shortcuts if windows)
 
@@ -34,5 +35,4 @@ Interacts with kdb/q from chrome using kdb http interface. Useful for quick kdb 
    * Because of this, don't use x or y since it's a reserved argument names in q
 
 ##Todo
-   * allow turning off closure
-   * more flexibility around saving and loading scripts
+   * ability to export saved scripts
